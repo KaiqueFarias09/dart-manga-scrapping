@@ -14,6 +14,7 @@ class MangasScrapper {
 
     final mangasDiv = scrappedPage.querySelectorAll("div.postagem_manga");
     List<SingleMangaModel> mangas = [];
+    
     mangasDiv.forEach((manga) {
       manga = manga.querySelector("div:nth-child(1) > a:nth-child(1)")!;
       mangas.add(
